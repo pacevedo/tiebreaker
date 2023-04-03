@@ -1,0 +1,3 @@
+export const ADD_SCORE = 'ADD_SCORE'
+export const UPDATE_SCORE = 'UPDATE_SCORE'
+export const MARK_SCORES_SAVED = 'MARK_SCORES_SAVED'

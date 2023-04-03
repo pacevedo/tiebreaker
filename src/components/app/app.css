@@ -1,0 +1,52 @@
+body{
+	font-family: Segoe UI;
+}
+
+#combinations{
+	border-collapse: collapse;
+	clear: both;
+}
+
+#combinations td, th{
+	text-align: center;
+	border: 1px solid #222;
+	padding: 5px;
+}
+
+.resultado {
+	width: 25px;
+	margin: 5px;
+}
+
+#filter{
+	margin-left: 50px;
+	float: left;
+}
+
+#tiebreakers{
+	float: left;
+}
+
+#tiebreakers p{
+	margin: 0px;
+}
+
+#tiebreakers span{
+	width: 20px;
+}
+
+.mas-combinaciones{
+	background: #AAAAAA;
+}
+
+#enlace{
+	display: none;
+}
+
+th.separator {
+	border-bottom: none;
+}
+
+#combinations td.separator {
+	border-top: none;
+}

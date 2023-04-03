@@ -1,0 +1,120 @@
+{
+    "sport": "basketball",
+    "competition": "Euroleague",
+    "initPosition": 6,
+    "tieGames": 2,
+    "teams": [{
+      "name": "Baskonia",
+      "abr": "BAS",
+      "wins": 15,
+      "color": "#A11524",
+      "background": "#283E65",
+      "logo": "baskonia.webp"
+    },{
+      "name": "Panathinaikos",
+      "abr": "PAO",
+      "wins": 15,
+      "color": "#FFFFFF",
+      "background": "#369162",
+      "logo": "panathinaikos.webp"
+    },{
+      "name": "Armani Milan",
+      "abr": "MIL",
+      "wins": 14,
+      "color": "#FFFFFF",
+      "background": "#D3271D",
+      "logo": "milano.webp"
+    },{
+      "name": "Olympiacos",
+      "abr": "OLY",
+      "wins": 14,
+      "color": "#D22A3A",
+      "background": "#FFFFFF",
+      "logo": "olympiacos.webp"
+    },{
+      "name": "Maccabi",
+      "abr": "MAC",
+      "wins": 14,
+      "color": "#1877B4",
+      "background": "#FDD365",
+      "logo": "maccabi.webp"
+    }, {
+      "name": "Zalgiris",
+      "abr": "ZAL",
+      "wins": 14,
+      "color": "#FFFFFF",
+      "background": "#266C37",
+      "logo": "zalgiris.webp"
+    }],
+  
+    "others": [{
+      "name": "Real Madrid",
+      "abr": "RMA",
+      "logo": "realmadrid.webp"
+    }, {
+      "name": "Fenerbahce",
+      "abr": "FEN",
+      "logo": "fenerbahce.webp"
+    }, {
+      "name": "Darussafaka",
+      "abr": "DAR",
+      "logo": "darussafaka.webp"
+    },  {
+      "name": "Efes Pilsen",
+      "abr": "EFS",
+      "logo": "efes.webp"
+    }, {
+      "name": "CSKA Moscu",
+      "abr": "CSK",
+      "logo": "cska.webp"
+    }, {
+      "name": "Buducnost",
+      "abr": "BUD",
+      "logo": "buducnost.webp"
+    }],
+    
+    "scores": [
+      {"local": "BAS", "visit": "OLY", "localScore": 80, "visitorScore": 85},
+      {"local": "OLY", "visit": "BAS", "localScore": 91, "visitorScore": 87},
+      {"local": "BAS", "visit": "ZAL", "localScore": 80, "visitorScore": 73},
+      {"local": "ZAL", "visit": "BAS", "localScore": 79, "visitorScore": 87},
+      {"local": "BAS", "visit": "PAO", "localScore": 86, "visitorScore": 77},
+      {"local": "PAO", "visit": "BAS", "localScore": 72, "visitorScore": 70},
+      {"local": "BAS", "visit": "MIL", "localScore": 80, "visitorScore": 75},
+      {"local": "MIL", "visit": "BAS", "localScore": 93, "visitorScore": 90},
+      {"local": "BAS", "visit": "MAC", "localScore": 97, "visitorScore": 73},
+      {"local": "MAC", "visit": "BAS", "localScore": 79, "visitorScore": 81},
+      {"local": "MAC", "visit": "MIL", "localScore": 94, "visitorScore": 92},
+      {"local": "MIL", "visit": "MAC", "localScore": 87, "visitorScore": 83},
+      {"local": "MAC", "visit": "ZAL", "localScore": 83, "visitorScore": 85},
+      {"local": "ZAL", "visit": "MAC", "localScore": 80, "visitorScore": 73},
+      {"local": "MAC", "visit": "OLY", "localScore": 65, "visitorScore": 64},
+      {"local": "OLY", "visit": "MAC", "localScore": 88, "visitorScore": 80},
+      {"local": "MAC", "visit": "PAO", "localScore": 84, "visitorScore": 75},
+      {"local": "PAO", "visit": "MAC", "localScore": 89, "visitorScore": 84},
+      {"local": "ZAL", "visit": "MIL", "localScore": 83, "visitorScore": 78},
+      {"local": "MIL", "visit": "ZAL", "localScore": 80, "visitorScore": 70},
+      {"local": "ZAL", "visit": "OLY", "localScore": 83, "visitorScore": 75},
+      {"local": "OLY", "visit": "ZAL", "localScore": 68, "visitorScore": 72},
+      {"local": "ZAL", "visit": "PAO", "localScore": 82, "visitorScore": 69},
+      {"local": "PAO", "visit": "ZAL", "localScore": 83, "visitorScore": 87},
+      {"local": "OLY", "visit": "MIL", "localScore": 75, "visitorScore": 99},
+      {"local": "MIL", "visit": "OLY", "localScore": 66, "visitorScore": 57},
+      {"local": "OLY", "visit": "PAO", "localScore": 79, "visitorScore": 65},
+      {"local": "PAO", "visit": "OLY", "localScore": 93, "visitorScore": 80},
+      {"local": "PAO", "visit": "MIL", "localScore": 83, "visitorScore": 86},
+      {"local": "MIL", "visit": "PAO", "localScore": 83, "visitorScore": 95}
+    ],
+  
+    "pendingMatches": [
+      {"local": "CSK", "visit": "BAS"},
+      {"local": "EFS", "visit": "MIL"},
+      {"local": "PAO", "visit": "BUD"},
+      {"local": "OLY", "visit": "DAR"},
+      {"local": "FEN", "visit": "MAC"},
+      {"local": "RMA", "visit": "ZAL"}
+    ],
+  
+    "possibleFixtures": [1,2]
+  
+  }

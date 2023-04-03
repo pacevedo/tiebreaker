@@ -1,0 +1,63 @@
+{
+  "sport": "basketball",
+  "competition": "Euroleague",
+  "initPosition": 3,
+  "tieGames": 2,
+  "teams": [{
+    "name": "Baxi Manresa",
+    "abr": "MAN",
+    "wins": 7,
+    "background": "#D31520",
+    "color": "#FFFFFF"
+  },{
+    "name": "Oostende",
+    "abr": "OOS",
+    "wins": 7,
+    "background": "#FFD500",
+    "color": "#ED1C24"
+  },{
+    "name": "Lietkabelis",
+    "abr": "LIE",
+    "wins": 6,
+    "background": "#68072E",
+    "color": "#FFFFFF"
+  },{
+    "name": "UNET Holon",
+    "abr": "UNE",
+    "wins": 6,
+    "background": "#886283",
+    "color": "#E1CA37"
+  }],
+
+  "others": [{
+    "name": "Dinamo Sassari",
+    "abr": "SAS"
+  },{
+    "name": "Polski Cukier Torun",
+    "abr": "TOR"
+  }],
+  
+  "scores": [
+    {"local": "MAN", "visit": "OOS", "localScore": 55, "visitorScore": 58},
+    {"local": "OOS", "visit": "MAN", "localScore": 75, "visitorScore": 72},
+    {"local": "MAN", "visit": "LIE", "localScore": 76, "visitorScore": 70},
+    {"local": "LIE", "visit": "MAN", "localScore": 77, "visitorScore": 70},
+    {"local": "MAN", "visit": "UNE", "localScore": 65, "visitorScore": 67},
+    {"local": "UNE", "visit": "MAN", "localScore": 90, "visitorScore": 88},
+    {"local": "OOS", "visit": "LIE", "localScore": 80, "visitorScore": 66},
+    {"local": "LIE", "visit": "OOS", "localScore": 68, "visitorScore": 76},
+    {"local": "OOS", "visit": "UNE", "localScore": 101, "visitorScore": 86},
+    {"local": "UNE", "visit": "OOS", "localScore": 58, "visitorScore": 59},
+    {"local": "LIE", "visit": "UNE", "localScore": 78, "visitorScore": 72}
+
+  ],
+
+  "pendingMatches": [
+    {"local": "MAN", "visit": "SAS"},
+    {"local": "TOR", "visit": "OOS"},
+    {"local": "UNE", "visit": "LIE"}
+  ],
+
+  "possibleFixtures": [1,2]
+
+}
