@@ -50,3 +50,14 @@ th.separator {
 #combinations td.separator {
 	border-top: none;
 }
+
+#combinations tbody {
+  overflow-y: scroll;
+  height: 300px;
+}
+
+#combinations thead {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+}

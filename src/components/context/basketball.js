@@ -3,7 +3,7 @@ import { Constants } from "../utils/constants"
 
 export class Basketball extends Sport{
 
-  maxScoringDifference = 10
+  maxScoringDifference = 50
 
   initParticular(){
     return {
