@@ -1,0 +1,93 @@
+{
+  "sport": "basketball",
+  "competition": "Euroleague",
+  "initPosition": 5,
+  "tieGames": 2,
+  "teams": [{
+    "name": "Maccabi",
+    "abr": "MAC",
+    "wins": 19,
+    "logo": "maccabi.webp"
+  },{
+    "name": "Fenerbahçe",
+    "abr": "FEN",
+    "wins": 19,
+    "logo": "fenerbahce.webp"
+  },{
+    "name": "Partizán",
+    "abr": "PAR",
+    "wins": 18,
+    "logo": "partizan.webp"
+  },{
+    "name": "Baskonia",
+    "abr": "BKN",
+    "wins": 18,
+    "logo": "baskonia.webp"
+  }, {
+    "name": "Zalgiris",
+    "abr": "ZAL",
+    "wins": 18,
+    "logo": "zalgiris.webp"
+  }],
+
+  "others": [{
+    "name": "Monaco",
+    "abr": "MON",
+    "logo": "monaco.webp"
+  },{
+    "name": "Estrella Roja",
+    "abr": "CRV",
+    "logo": "estrellaroja.webp"
+  },{
+    "name": "Olympiacos",
+    "abr": "OLY",
+    "logo": "olympiacos.webp"
+  },{
+    "name": "Real Madrid",
+    "abr": "RMA",
+    "logo": "realmadrid.webp"
+  },{
+    "name": "Bayern Münich",
+    "abr": "BAY",
+    "logo": "bayern.webp"
+  },{
+    "name": "Panathinaikos",
+    "abr": "PAO",
+    "logo": "panathinaikos.webp"
+  }],
+
+  "scores": [
+    {"local": "FEN", "visit": "PAR", "localScore": 72, "visitorScore": 73},
+    {"local": "PAR", "visit": "FEN", "localScore": 94, "visitorScore": 97},
+    {"local": "FEN", "visit": "ZAL", "localScore": 87, "visitorScore": 79},
+    {"local": "ZAL", "visit": "FEN", "localScore": 86, "visitorScore": 66},
+    {"local": "FEN", "visit": "MAC", "localScore": 86, "visitorScore": 71},
+    {"local": "MAC", "visit": "FEN", "localScore": 78, "visitorScore": 74},
+    {"local": "FEN", "visit": "BKN", "localScore": 70, "visitorScore": 76},
+    {"local": "BKN", "visit": "FEN", "localScore": 92, "visitorScore": 69},
+    {"local": "BKN", "visit": "ZAL", "localScore": 93, "visitorScore": 73},
+    {"local": "ZAL", "visit": "BKN", "localScore": 79, "visitorScore": 75},
+    {"local": "BKN", "visit": "PAR", "localScore": 97, "visitorScore": 96},
+    {"local": "PAR", "visit": "BKN", "localScore": 83, "visitorScore": 65},
+    {"local": "BKN", "visit": "MAC", "localScore": 116, "visitorScore": 87},
+    {"local": "MAC", "visit": "BKN", "localScore": 93, "visitorScore": 79},
+    {"local": "PAR", "visit": "ZAL", "localScore": 87, "visitorScore": 76},
+    {"local": "ZAL", "visit": "PAR", "localScore": 74, "visitorScore": 88},
+    {"local": "PAR", "visit": "MAC", "localScore": 96, "visitorScore": 88},
+    {"local": "MAC", "visit": "PAR", "localScore": 90, "visitorScore": 81},
+    {"local": "MAC", "visit": "ZAL", "localScore": 84, "visitorScore": 83},
+    {"local": "ZAL", "visit": "MAC", "localScore": 68, "visitorScore": 67}
+  ],
+
+  "pendingMatches": [
+    {"local": "MON", "visit": "PAR"},
+    {"local": "CRV", "visit": "FEN"},
+    {"local": "OLY", "visit": "BKN"},
+    {"local": "MAC", "visit": "RMA"},
+    {"local": "BAY", "visit": "ZAL"},
+    {"local": "PAR", "visit": "PAO"}
+  ],
+
+  "possibleFixtures": [1,2]
+
+}
