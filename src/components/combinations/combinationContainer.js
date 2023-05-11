@@ -18,10 +18,21 @@ function CombinationContainer() {
     return fixture === "" || parseInt(fixture) === result
   }
 
+  const isTeamInPositions = (team, standings, positionsToFilter) => {
+    const position = standings.findIndex(element => element.abr === team)
+    if (positionsToFilter.length > 0) {
+      const positionNumbers = positionsToFilter.map(position => parseInt(position))
+      if (!positionNumbers.includes(position + data.initPosition)){
+        return false
+      } 
+    }
+    return true
+  }
+
   if (score && score.areSaved && combinations && combinations.areSaved) {
     // Get by filters
     const combinationsFiltered = combinations.combinations.filter(combination => {
-      const {matches, standings} = combination
+      const {matches, standings, otherStandings} = combination
       // Filter of fixtures
       if (fixtures.length === matches.length) {
         const results = matches.map(match => match.result)
@@ -32,13 +43,18 @@ function CombinationContainer() {
       }
       // Filter of positions by team
       if (team !== ""){
-        const position = standings.findIndex(element => element.abr === team)
-        if (positions.length > 0) {
-          const positionNumbers = positions.map(position => parseInt(position))
-          if (!positionNumbers.includes(position + data.initPosition)){
-            return false
+        if (!isTeamInPositions(team, standings, positions)) {
+          if (otherStandings.length > 0) {
+            let exists = false
+            otherStandings.forEach(possibility => {
+              if (isTeamInPositions(team, possibility, positions)) {
+                exists = true
+              }
+            })
+            return exists
           }
-        }
+          return false
+        } 
       }
       return true
     })
@@ -47,12 +63,29 @@ function CombinationContainer() {
       if (otherStandings.length > 0) {
         return otherStandings.map((possibility, index) => {
           return <tr key={`others-${i}-${index}`}>
-            {possibility.map(team => <td key={team.abr} style={{background: team.background, color: team.color}}>{team.abr}</td>)}
+            {possibility.map(team => showTeam(team))}
           </tr>
         })
       } else {
         return <></>
       }
+    }
+
+    const showTeam = (team) => {
+      if (team.logo !== undefined) {
+        return <td key={team.abr}><img src={`./assets/logos/${team.logo}`} alt={team.abr} width="32px"></img></td>
+      } else {
+        return <td key={team.abr} style={{background: team.background, color: team.color}}>{team.abr}</td>
+      }
+    }
+
+    const getTotalSize = (combinationsFiltered) =>{
+      let totalSize = 0
+      combinationsFiltered.forEach(combination => {
+        totalSize++
+        totalSize += combination.otherStandings.length
+      })
+      return totalSize
     }
 
 
@@ -67,7 +100,7 @@ function CombinationContainer() {
         <tbody>
           {combinationsFiltered.map((combination, index) => 
             <React.Fragment key={index}>
-              <tr key={index}><Combination combinations={combination} index={index} size={combinationsFiltered.length}/></tr>
+              <tr key={index}><Combination combinations={combination} index={index} size={getTotalSize(combinationsFiltered)}/></tr>
               {getOtherStandings(combination.otherStandings, index)}
             </React.Fragment>
           )}     

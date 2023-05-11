@@ -123,7 +123,8 @@ export const Ties = {
         return true;
       }
     } else if (context.tieGames === 2){
-      if (localScore1 === "" || localScore2 === ""){
+      if (localScore1 === "" || localScore2 === "" || 
+      localScore1 === undefined || localScore2 === undefined){
         return true;
       }
     }

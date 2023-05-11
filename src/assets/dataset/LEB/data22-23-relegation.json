@@ -1,0 +1,98 @@
+{
+    "sport": "basketball",
+    "competition": "LEB",
+    "initPosition": 14,
+    "tieGames": 2,
+    "teams": [{
+      "name": "Cáceres",
+      "abr": "CAC",
+      "wins": 10,
+      "logo": "Cáceres.jpg"
+    },{
+      "name": "Oviedo",
+      "abr": "OVI",
+      "wins": 9,
+      "logo": "Oviedo.jpg"
+    },{
+      "name": "Iraurgi",
+      "abr": "ISB",
+      "wins": 8,
+      "logo": "Iraurgi.jpg"
+    },{
+      "name": "Albacete",
+      "abr": "ALB",
+      "wins": 7,
+      "logo": "Albacete.jpg"
+    },{
+      "name": "Melilla",
+      "abr": "MEL",
+      "wins": 7,
+      "logo": "Melilla.jpg"
+    }],
+  
+    "others": [{
+      "name": "Valladolid",
+      "abr": "VLL",
+      "logo": "Valladolid.jpg"
+    },{
+      "name": "Lleida",
+      "abr": "LLE",
+      "logo": "Lleida.jpg"
+    },{
+      "name": "TAU Castelló",
+      "abr": "TAU",
+      "logo": "Castellon.jpg"
+    },{
+      "name": "Estudiantes",
+      "abr": "EST",
+      "logo": "Estudiantes.jpg"
+    },{
+      "name": "Palencia",
+      "abr": "PAL",
+      "logo": "Palencia.jpg"
+    },{
+      "name": "Almansa",
+      "abr": "ALM",
+      "logo": "Almansa.png"
+    },{
+      "name": "Cantabria",
+      "abr": "CAN",
+      "logo": "Cantabria.jpg"
+    }],
+  
+    "scores": [
+      {"local": "CAC", "visit": "OVI", "localScore": 70, "visitorScore": 68},
+      {"local": "OVI", "visit": "CAC", "localScore": 68, "visitorScore": 71},
+      {"local": "CAC", "visit": "ALB", "localScore": 87, "visitorScore": 76},
+      {"local": "ALB", "visit": "CAC", "localScore": 60, "visitorScore": 64},
+      {"local": "CAC", "visit": "ISB", "localScore": 60, "visitorScore": 86},
+      {"local": "ISB", "visit": "CAC", "localScore": 102, "visitorScore": 97},
+      {"local": "OVI", "visit": "ALB", "localScore": 63, "visitorScore": 57},
+      {"local": "ALB", "visit": "OVI", "localScore": 88, "visitorScore": 42},
+      {"local": "OVI", "visit": "ISB", "localScore": 84, "visitorScore": 78},
+      {"local": "ISB", "visit": "OVI", "localScore": 94, "visitorScore": 85},
+      {"local": "ALB", "visit": "ISB", "localScore": 74, "visitorScore": 79},
+      {"local": "ISB", "visit": "ALB", "localScore": 67, "visitorScore": 76},
+      {"local": "MEL", "visit": "ISB", "localScore": 95, "visitorScore": 69},
+      {"local": "ISB", "visit": "MEL", "localScore": 97, "visitorScore": 86},
+      {"local": "MEL", "visit": "ALB", "localScore": 61, "visitorScore": 70},
+      {"local": "ALB", "visit": "MEL", "localScore": 84, "visitorScore": 90},
+      {"local": "MEL", "visit": "OVI", "localScore": 67, "visitorScore": 70},
+      {"local": "OVI", "visit": "MEL", "localScore": 69, "visitorScore": 78}
+    ],
+  
+    "pendingMatches": [
+      {"local": "VLL", "visit": "ALB"},
+      {"local": "LLE", "visit": "ISB"},
+      {"local": "OVI", "visit": "TAU"},
+      {"local": "MEL", "visit": "CAC"},
+      {"local": "ISB", "visit": "EST"},
+      {"local": "PAL", "visit": "MEL"},
+      {"local": "CAC", "visit": "VLL"},
+      {"local": "ALB", "visit": "ALM"},
+      {"local": "CAN", "visit": "OVI"}
+    ],
+  
+    "possibleFixtures": [1,2]
+  
+  }

@@ -128,8 +128,7 @@ export const Standings = {
   updateTeam: (team, scores, match, particularStandings, context, combinationMatches) => {
       const [local, visitor] = Util.toArr(match);
       const score = scores.filter(item => item.local === local && item.visit === visitor);
-      
-      if (score.length > 0){
+      if (score.length > 0 && score[0].localScore !== undefined){
           // Update particular standing from the scores finished
           const scoreTeam = context.getScoreTeam(team, score[0])
           context.updateStandingsTeam(scoreTeam, particularStandings)
@@ -154,8 +153,9 @@ export const Standings = {
     arrPositions.forEach(positions => {
       // get incomplete matches for these teams
       let incompleteMatches = Standings.getIncompleteMatches(positions, scores, context)
+      
       // if there are incomplete matches
-      if (incompleteMatches) {
+      if (incompleteMatches.length > 0) {
         // generate possibilities for the fixture in the combination (just changing differences)
         otherPositions.push({
           "teamsTied": positions,
@@ -171,7 +171,7 @@ export const Standings = {
    * Get the matches that don't have a result
    */
   getIncompleteMatches: (standings, scores, context) => {
-    const incompleteMatches = [];
+    let incompleteMatches = [];
     for (let i = 0; i < standings.length; i++) {
       for (let j = i + 1; j < standings.length; j++) {
         const team1 = standings[i];

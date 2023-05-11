@@ -1,4 +1,4 @@
-export const data = require ('../../assets/dataset/Euroleague/data22-23.json');
+export const data = require ('../../assets/dataset/LEB/data22-23-playoff.json');
 
 export let matches = []
 data.pendingMatches.forEach(item => {
