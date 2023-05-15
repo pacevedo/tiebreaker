@@ -1,0 +1,70 @@
+{
+    "sport": "basketball",
+    "competition": "LEB",
+    "initPosition": 4,
+    "tieGames": 2,
+    "teams": [{
+      "name": "Estudiantes",
+      "abr": "EST",
+      "wins": 21,
+      "logo": "Estudiantes.jpg"
+    },{
+      "name": "Valladolid",
+      "abr": "VLL",
+      "wins": 21,
+      "logo": "Valladolid.jpg"
+    },{
+      "name": "Lleida",
+      "abr": "LLE",
+      "wins": 21,
+      "logo": "Lleida.jpg"
+    },{
+      "name": "Burgos",
+      "abr": "BUR",
+      "wins": 21,
+      "logo": "Burgos.png"
+    }],
+  
+    "others": [{
+      "name": "Coruña",
+      "abr": "COR",
+      "logo": "Coruña.jpg"
+    },{
+      "name": "Iraurgi",
+      "abr": "ISB",
+      "logo": "Iraurgi.jpg"
+    },{
+      "name": "Ourense",
+      "abr": "COB",
+      "logo": "Ourense.png"
+    },{
+      "name": "Cáceres",
+      "abr": "CAC",
+      "logo": "Cáceres.jpg"
+    }],
+  
+    "scores": [
+      {"local": "BUR", "visit": "VLL", "localScore": 77, "visitorScore": 58},
+      {"local": "VLL", "visit": "BUR", "localScore": 75, "visitorScore": 61},
+      {"local": "BUR", "visit": "EST", "localScore": 78, "visitorScore": 86},
+      {"local": "EST", "visit": "BUR", "localScore": 104, "visitorScore": 96},
+      {"local": "BUR", "visit": "LLE", "localScore": 90, "visitorScore": 78},
+      {"local": "LLE", "visit": "BUR", "localScore": 85, "visitorScore": 79},
+      {"local": "VLL", "visit": "EST", "localScore": 81, "visitorScore": 75},
+      {"local": "EST", "visit": "VLL", "localScore": 81, "visitorScore": 70},
+      {"local": "VLL", "visit": "LLE", "localScore": 97, "visitorScore": 57},
+      {"local": "LLE", "visit": "VLL", "localScore": 85, "visitorScore": 77},
+      {"local": "EST", "visit": "LLE", "localScore": 94, "visitorScore": 75},
+      {"local": "LLE", "visit": "EST", "localScore": 96, "visitorScore": 66}
+    ],
+  
+    "pendingMatches": [
+      {"local": "ISB", "visit": "EST"},
+      {"local": "CAC", "visit": "VLL"},
+      {"local": "COB", "visit": "LLE"},
+      {"local": "BUR", "visit": "COR"}
+    ],
+  
+    "possibleFixtures": [1,2]
+  
+  }
